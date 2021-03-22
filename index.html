@@ -20,14 +20,14 @@
             padding: 14px 16px;
         }
         
-        .navlileft {
+        .navtopleft {
           display: inline-block;
           font-size: 14px;
           padding: 10px 10px;
           color: black;
         }
 
-        .navliright {
+        .navtopright {
           display: inline-block;
           float: right;
           font-size: 14px;
@@ -38,10 +38,12 @@
           max-width: 500px;
           margin: auto;
         }
+        
         form {
           max-width: 450px;
           margin: auto;
         }
+        
         .inpfield {
           width: 25%;
           padding: 10px;
@@ -49,46 +51,66 @@
           font-size: 20px;
           font-weight: 500;
         }
+        
         .footbar {
-          list-style-type: none;
-          margin: 0px;
-          padding: 0px;
+          overflow: hidden;
+          position: fixed;
+          bottom: 0;
+          width: 100%;
           background: lightgray;
+        }
+
+        .navbotleft {
+          display: inline-block;
+          font-size: 14px;
+          padding: 10px 10px;
+          color: black;
+        }
+
+        .navbotright {
+          display: inline-block;
+          font-size: 14px;
+          padding: 10px 10px;
+          color: black;
         }
       </style>
     </head>
+    
     <body>
       <div>
         <ul class=navbartop>
-          <li class=navlileft><a href="about.html">About</a></li>
-          <li class=navlileft><a href="store.html">Store</a></li>
-          <li class=navliright><a href="gmail.html">Gmail</a></li>
-          <li class=navliright><a href="images.html">Images</a></li>
-          <li class=navliright><a href="googleappsicon.html">ICON</a></li>
-          <li class=navliright><a href="signinbutton.html">Sign in</a></li>
+          <li class=navtopleft><a href="about.html">About</a></li>
+          <li class=navtopleft><a href="store.html">Store</a></li>
+          <li class=navtopright><a href="gmail.html">Gmail</a></li>
+          <li class=navtopright><a href="images.html">Images</a></li>
+          <li class=navtopright><a href="googleappsicon.html">ICON</a></li>
+          <li class=navtopright><a href="signinbutton.html">Sign in</a></li>
         </ul>
       </div>
+      
       <div class=glogo>
         <img class=glogo src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"> 
       </div>
+      
       <div>
         <form>
           <div>
-            <i> </i>
+            <i class="fa fa-user icon"></i>
             <input class=inpfield type="text" placeholder="">
           </div>
           <button type="submit">Google Search</button>
           <button type="submit">I'm Feeling Lucky</button>          
         </form>
       </div>
-      <div>
-        <ul class=footbar>
-          <li><a href="advertising.html">Advertising</a></li>
-          <li><a href="business.html">Business</a></li>
-          <li><a href="howsearchworks.html">How Search works</a></li>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="terms.html">Terms</a></li>
-          <li><a href="settings.html">Settings</a></li>
+      
+      <div class=footbar>
+        <a class=navbotleft href="advertising.html">Advertising</a></li>
+        <a class=navbotleft href="business.html">Business</a></li>
+        <a class=navbotleft href="howsearchworks.html">How Search works</a></li>
+        <a class=navbotright href="privacy.html">Privacy</a></li>
+        <a class=navbotright href="terms.html">Terms</a></li>
+        <a class=navbotright href="settings.html">Settings</a></li>
       </div>
     </body>
+    
   </html>
